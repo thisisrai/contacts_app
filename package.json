@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Build a contacts manager web application with Express and PostgreSQL.",
   "scripts": {
+    "import": "psql contacts < contacts_full.sql",
+    "schema": "psql contacts < schema.sql",
     "start": "node server.js",
     "start:dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
