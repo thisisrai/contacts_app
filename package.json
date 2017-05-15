@@ -1,5 +1,5 @@
 {
-  "name": "Week 5 Assessment: Contacts App",
+  "name": "week_5_Assessment_Contacts_App",
   "version": "1.0.0",
   "description": "Build a contacts manager web application with Express and PostgreSQL.",
   "scripts": {
@@ -8,6 +8,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "nodemon": "^1.11.0",
+    "pg": "^6.2.2"
+  },
   "devDependencies": {}
 }
