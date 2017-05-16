@@ -1,5 +1,7 @@
 const pg = require('pg')
+const pgp = require('pg-promise')()
 const connectionString = process.env.DATABASE_URL || `postgres://${process.env.USER}@localhost:5432/contacts`
+const db = pgp(connectionString)
 const client = new pg.Client(connectionString)
 client.connect()
 
@@ -27,16 +29,6 @@ const getContacts = function(callback){
   `, [], callback)
 }
 
-const searchContacts = function(){
-  query(`
-    SELECT
-      *
-    FROM
-      contacts
-    WHERE
-      name = Rai
-  `, [], callback)
-}
 
 module.exports = {
   getContacts,
