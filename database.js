@@ -27,6 +27,17 @@ const getContacts = function(callback){
   `, [], callback)
 }
 
+const searchContacts = function(){
+  query(`
+    SELECT
+      *
+    FROM
+      contacts
+    WHERE
+      name = Rai
+  `, [], callback)
+}
+
 module.exports = {
   getContacts,
 }
