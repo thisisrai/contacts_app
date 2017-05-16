@@ -23,6 +23,11 @@ app.get('/', (request, response) => {
   })
 })
 
+app.get('/contacts/:id', (request, response) => {
+  var id = request.params.id
+  console.log(id);
+})
+
 app.use((request, response) => {
   response.status(404).render('not_found')
 })
