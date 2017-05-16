@@ -26,6 +26,12 @@ app.get('/', (request, response) => {
 app.get('/contacts/:id', (request, response) => {
   var id = request.params.id
   console.log(id);
+  //Need to use this id to search for specific person 
+})
+
+app.post('/contacts/new', (request, response) => {
+  var dataInput = request.body
+  //placeholder need to finish this route
 })
 
 app.use((request, response) => {
