@@ -8,18 +8,14 @@
   </head>
   <body>
     <div class="container">
-      <div id="header" class="row">
-        <div class="col-md-1" id="home">Home</div>
-        <div class="col-md-3" id="search"><input id="searchbar" type="search" placeholder="search"></input></div>
-        <div class="col-md-2" id="new_contact"><a href="#">New Contact</a></div>
-      </div>
+      <%- include('header') %>
       <div class="row contact-list">
         <h1>Contacts</h1>
         <div class="col-md-12">
         <% contacts.forEach(function(contact){ %>
           <div>
-            <%= contact.name %>
-            <a id="delete">X</a>
+            <div id="individual_contact"><a href="#"><%= contact.name %><a></div>
+            <a id="delete" href="#">X</a>
           </div>
           <% }) %>
         </div>
