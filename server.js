@@ -19,6 +19,7 @@ app.get('/', (request, response) => {
       response.render('index', {
         contacts: contacts,
       })
+      console.log(contacts)
     }
   })
 })
@@ -26,7 +27,7 @@ app.get('/', (request, response) => {
 app.get('/contacts/:id', (request, response) => {
   var id = request.params.id
   console.log(id);
-  //Need to use this id to search for specific person 
+  //Need to use this id to search for specific person
 })
 
 app.post('/contacts/new', (request, response) => {

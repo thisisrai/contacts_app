@@ -1,8 +1,64 @@
-html, body{
-  margin: 0;
-  padding: 0;
-  width: 100vw;
+html {
+  height: 100%;
 }
-body{  
-  background-color: #50E3C2
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #50E3C2;
+  padding-left: 20%;
+  padding-right:20%;
+  color: #4A4A4A;
+  font-size: 16px;
+  font-family: monospace;
+}
+
+#header {
+  height: 55px;
+  background-color: #4990E2;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list {
+  height: 100%;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px; 
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: white;
+  box-shadow: 0 0 15px 5px rgba(31, 73, 125, 0.8);
+}
+
+#home {
+  color: white;
+  margin: .75em;
+  font-size: 18px;
+}
+
+#search {
+  color: #4A4A4A;
+  margin: .75em;
+  font-size: 18px;
+}
+
+#searchbar{
+  border-radius: 7.5px 7.5px 7.5px 7.5px;
+}
+
+#new_contact {
+  color: white;
+  margin: .75em;
+  font-size: 18px;
+}
+
+#delete {
+  color: #D0011B;
+  float: right;
 }
