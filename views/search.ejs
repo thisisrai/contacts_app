@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contacts</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <%- include('header') %>
+      <div class="row contact-list">
+        <h1>New Contacts</h1>
+        <div>
+          <form id="new_contact_form" method="post" action="/contacts/new" >
+            name <input name="name" id="name">
+            email <input align="center" name="email" type="text">
+            phone <input align="center" name="phone" type="text">
+            street <input align="center" name="street" type="text">
+            city <input align="center" name="city" type="text">
+            state <input align="center" name="state" type="text">
+            <br>
+            zip code<input align="center" name="zip" type="text">
+            country <input align="center" name="country" type="text">
+            birthday <input align="center" name="birthday" type="text">
+            website <input align="center" name="website" type="text">
+            <br>
+            <br>
+            <input align="center" type="submit" value="Create Contact">
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/script.js"></script>
+  </body>
+</html>

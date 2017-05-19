@@ -4,7 +4,6 @@
     <title>Contacts</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/style.css">
-    <script type="text/javascript" src="/script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -12,6 +11,7 @@
       <div class="row contact-list">
         <h1>Contacts</h1>
         <div class="col-md-12">
+          <% console.log(contacts[0]) %>
         <% contacts.forEach(function(contact){ %>
           <div>
             <div id="individual_contact"><a href="#"><%= contact.name %><a></div>
@@ -21,5 +21,7 @@
         </div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/script.js"></script>
   </body>
 </html>

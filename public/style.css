@@ -13,6 +13,11 @@ body {
   font-family: monospace;
 }
 
+form {
+margin: 0 auto;
+width:250px;
+}
+
 #header {
   height: 55px;
   background-color: #4990E2;
@@ -65,4 +70,11 @@ body {
 
 #individual_contact {
   color: #002653;
+}
+#new_contact_form {
+  margin-top: 20px;
+}
+
+#name {
+  text-align: center;
 }

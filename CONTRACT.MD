@@ -22,7 +22,7 @@ There are three different pages, each with their own route.
 - [x] The list of all contacts can be viewed at the _root_ route, `/`.
 - [ ] Individual contacts can be viewed in more detail at the route `/contacts/:id`, where `:id` is a contact record id from the database.
     <br>For example, visiting the route `/contacts/3` would show the contact with the database id 3.
-- [ ] New contacts can be created by visiting the route `/contacts/new` and submitting the form.
+- [x] New contacts can be created by visiting the route `/contacts/new` and submitting the form.
 
 #### Database
 
@@ -43,10 +43,10 @@ Users of the app have the ability to take the following actions.
 ##### Stage One: MVP
 
 - [x] When a user is viewing the list page (`/`), they see all of their contacts.
-- [ ] On the list page, a user can see a list of all contacts' names sorted alphabetically by first name.
+- [x] On the list page, a user can see a list of all contacts' names sorted alphabetically by first name.
 - [ ] When a user is viewing the list page (`/`), they can click on individual contacts to go to the corresponding detail page for the contact (`/contacts/:id`).
 - [ ] On the contact detail page, a user can see the contact's name, email address, phone number, home address (including: street, city, state, country, and zip code), birthday, and personal website.
-- [ ] When a user is viewing the list page (`/`), they can click on a link to "Add Contact", which takes them to the new contact page (`/contacts/new`).
+- [x] When a user is viewing the list page (`/`), they can click on a link to "Add Contact", which takes them to the new contact page (`/contacts/new`).
 - [ ] When a user fills out and submits the new contact form at `/contacts/new`, they are redirected to the "detail" page for the new contact.
     <br>For example, if a user creates a new contact "Ada Lovelace", then after submitting the form they would be redirected to the contact page for Ada Lovelace (`/contacts/<id>`, where `<id>` is the record id from the database corresponding to the new contact).
 
@@ -63,8 +63,8 @@ Users of the app have the ability to take the following actions.
 The user interface matches the designs in the [mockups](#mockups).
 
 - [x] The entire page content should be constrained by a centered page column.
-- [ ] The site header has a link to the homepage.
-- [ ] The site header has a link to the new contact page (`/contacts/new`).
+- [x] The site header has a link to the homepage.
+- [x] The site header has a link to the new contact page (`/contacts/new`).
 - [ ] The site header has a a text input that lets you fuzzy search for contacts.
 - [x] The color of the header, link text, etc. are exactly the same as the colors in the mockups.
   - Background: `#50E3C2` (teal)
@@ -85,7 +85,7 @@ The user interface matches the designs in the [mockups](#mockups).
 Use HTML templating to build your web pages and embed dynamic data.
 
 - [x] The server uses the [EJS templating language][ejs] to build HTML.
-- [ ] Each route that renders HTML uses its own EJS template.
+- [x] Each route that renders HTML uses its own EJS template.
 - [x] Each page template shares the same layout.
   <br/>The means the `<head>` is consistent across all paged and is not duplicated.
 - [x] Each page template shared the same nav bar.
